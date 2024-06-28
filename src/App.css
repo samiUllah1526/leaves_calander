@@ -1,0 +1,76 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+/* React Day picker stylling */
+.rdp-day_today:not(.rdp-day_outside) {
+  font-weight: normal !important;
+}
+
+.rdp-nav,
+.rdp-caption_label {
+  display: none !important;
+}
+
+.sickLeaves {
+  background: lightcoral !important;
+}
+
+.paternityLeaves {
+  background: green !important;
+}
+
+.annualLeaves {
+  background: yellow !important;
+}
+
+.studyLeaves {
+  background: blue !important;
+}
+
+.booked {
+  position: relative;
+}
+/* Strikeout */
+.booked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+  z-index: 1;
+  transform: rotate(-45deg);
+}
+
+
+.day-cell-custom {
+  width: 120px;
+  height: 80px;
+  border-radius: 0;
+}
+
+.day-header-custom {
+  background-color: lightblue;
+  color: white; 
+  text-align: center;
+}
+
+.day-header-row-custom {
+  background: #A0A0A0;
+  color: #061673;
+  font-size: 0.95em;
+}
+
+.day-header-row-custom > * {
+  background: #A0A0A0;
+  color: #061673;
+  font-size: 0.95em;
+}
